@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>/* General reset */
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        background-color: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+    
+    /* About Me Section */
+    .about-me {
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        max-width: 1200px;
+        margin: 0 auto; /* Center the section */
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    /* Profile Section */
+    .profile {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        max-width: 1000px;
+        flex-wrap: wrap; /* Wrap on small screens */
+    }
+    
+    .profile img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    .avatar {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    
+    .info {
+        flex: 1; /* Take remaining space */
+        max-width: 600px;
+    }
+    
+    .info h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .highlight {
+        color: #0056b3;
+    }
+    
+    .info p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: #555;
+    }
+    
+    .details {
+        list-style: none;
+        margin-top: 10px;
+    }
+    
+    .details li {
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+    }
+    
+    /* Stats Section */
+    .stats {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    
+    .stat {
+        text-align: center;
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    summary {
+        cursor: pointer;
+        color: #0056b3;
+        font-weight: bold;
+    }
+    
+    details {
+        margin-bottom: 15px;
+    }
+    
+    .stat h2 {
+        font-size: 1.8rem;
+        color: #06b300;
+    }
+    
+    .stat p {
+        font-size: 0.9rem;
+        color: #666;
+    }
+    
+    /* Media Queries for Tablets */
+    @media (max-width: 768px) {
+        .profile {
+            flex-direction: column; /* Stack vertically */
+            align-items: center;
+            text-align: center;
+        }
+    
+        .profile img {
+            width: 200px; /* Adjust image size */
+            height: 200px;
+        }
+    
+        .info {
+            text-align: center;
+            max-width: 100%;
+        }
+    
+        .stat {
+            width: 90%; /* Adjust stats section width */
+        }
+    }
+    
+    /* Media Queries for Mobile Devices */
+    @media (max-width: 480px) {
+        * {
+            font-size: 16px; /* Smaller font for mobile */
+        }
+    
+        .profile img {
+            width: 150px;
+            height: 150px;
+        }
+    
+        .info h1 {
+            font-size: 1.8rem;
+        }
+    
+        .stats {
+            gap: 10px; /* Reduce spacing */
+        }
+    
+        .stat {
+            width: 100%; /* Full width for stats */
+        }
+    }
+    </style>
+<body>
+    <section class="about-me">
+        <div class="container">
+            <div class="profile">
+                <img src="e1.png"><div class="info">
+                    <h1 style="font-size: 50px;">Technical <span style="font-size: 50px;"class="highlight">Slide </span>View</h1>
+                    <p>desc........</p>
+                    <ul class="details">
+                        <li><strong>Event Date:</strong> 4th April 1998</li>
+                        <li><strong>Event Timings:</strong> ........</li>
+                        <li><strong>Event location:</strong> ........</li>
+                        <li><strong>No. of Levels:</strong>3</li>
+                        <li><strong><details>
+                            <summary>Level 1</summary>
+                            <p>This is the hidden content revealed after clicking the summary.</p>
+                        </details></li>
+                        <li><strong><details>
+                            <summary>Level 2</summary>
+                            <p>This is the hidden content revealed after clicking the summary.</p>
+                        </details></li>
+                        <li><strong><details>
+                            <summary>Level 3</summary>
+                            <p>This is the hidden content revealed after clicking the summary.</p>
+                        </details></li>
+                        <li><strong>Student Co-ordinator PhoneNo:</strong> +920 885 3321</li>
+                        <li><strong>Faculty Co-ordinator PhoneNo:</strong> +920 885 3321</li>
+                        
+                    </ul>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img style="width: 70px; height: 70px;" src="winner (1).png" alt="Winner Icon">
+                        <div>
+                            <p style="margin: 0;"><strong>Prize 1</strong></p>
+                            <p style="margin: 0;"><strong>Prize 2</strong></p>
+                            <p style="margin: 0;"><strong>Prize 3</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <h2>Join Whatsapp Group</h2>
+                    <a>link</a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>cse_event</title>
+</head>
+<body>
+    
+    <style>
+    .image{
+        background-image: url("https://wallpapers.com/images/featured/information-technology-background-yj5lntx9lzio3yiz.jpg");
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 5rem;
+        text-align: center;
+    }
+    .hero {
+        display: inline-block;
+        position: relative;
+        width: 400px;
+        min-width: 400px;
+        height: 400px;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+        margin: 30px;
+    }
+    
+    .hero-profile-img {
+        height: 70%;
+    }
+    
+    .hero-description-bk {
+        background-image: linear-gradient(0deg, #3f5efb, #fc466b);
+        border-radius: 30px;
+        position: absolute;
+        top: 55%;
+        left: -5px;
+        height: 65%;
+        width: 108%;
+        transform: skew(19deg, -9deg);
+    }
+    
+    .second .hero-description-bk {
+        background-image: linear-gradient(-20deg, #bb7413, #e7d25c)
+    }
+    
+    .hero-logo {
+        height: 80px;
+        width: 80px;
+        border-radius: 20px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 30%;
+        left: 30px;
+        overflow: hidden;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    }
+    
+    .hero-logo img {
+        height: 100%;
+    }
+    
+    .hero-description {
+        position: absolute;
+        color: #fff;
+        font-weight: 900;
+        left: 150px;
+        bottom: 26%;
+    }
+    .hero-description p{
+        font-size: larger;
+    }
+    .hero-btn {
+        position: absolute;
+        color: #fff;
+        right: 30px;
+        bottom: 10%;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+    }
+    
+    .hero-btn a {
+        color: #fff;
+    }
+    
+    .hero-date {
+        position: absolute;
+        color: #fff;
+        left: 30px;
+        bottom: 10%;
+    }/* Mobile View: Align Content Center */
+@media (max-width: 768px) {
+    .hero-container {
+        display: flex; /* Make the container a flexbox */
+        flex-direction: column; /* Stack the hero cards vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        width: 100%; /* Use full screen width */
+        min-height: 100vh; /* Full viewport height */
+        padding: 10px 0; /* Add spacing at the top and bottom */
+        box-sizing: border-box; /* Include padding in the width/height */
+    }
+
+    .hero {
+        display: flex; /* Make hero cards flex containers */
+        flex-direction: column; /* Stack elements vertically within each card */
+        justify-content: center; /* Center card content vertically */
+        align-items: center; /* Center card content horizontally */
+        width: 90%; /* Take up most of the screen width */
+        margin: 15px 0; /* Spacing between cards */
+        padding: 20px; /* Add some padding inside each card */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+        border-radius: 8px; /* Rounded corners */
+        background-color: #f9f9f9; /* Light background for visibility */
+        text-align: center; /* Center the text */
+    }
+
+    .hero-profile-img {
+        width: 100%; /* Full width inside card */
+        max-width: 300px; /* Limit max width */
+        height: auto; /* Keep aspect ratio */
+        border-radius: 8px; /* Rounded corners for images */
+        margin-bottom: 10px; /* Spacing below image */
+    }
+
+    .hero-logo img {
+        width: 50px; /* Logo size */
+        height: 50px;
+        margin: 10px 0; /* Spacing around logo */
+    }
+
+    .hero-description p {
+        font-size: 1rem;
+        margin: 10px 0; /* Add spacing around description */
+    }
+
+    .hero-date p {
+        font-size: 0.9rem;
+        color: #666; /* Slightly muted text color */
+    }
+
+    .hero-btn a {
+        display: inline-block;
+        padding: 10px 20px; /* Button padding */
+        background-color: #007bff; /* Button color */
+        color: #fff; /* Text color */
+        text-decoration: none;
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s; /* Smooth hover effect */
+    }
+
+    .hero-btn a:hover {
+        background-color: #0056b3; /* Darker button on hover */
+    }
+
+    h1.image {
+        font-size: 1.8rem; /* Adjust heading font size */
+        margin-bottom: 20px; /* Spacing below heading */
+        text-align: center;
+    }
+}
+
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+       
+        background-color: #eee;
+        min-height: 100vh;
+    }</style>
+                                    <script type='text/javascript' src=''></script>
+                                    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+                                    <script type='text/javascript' src=''></script>
+                                </head>
+                                <body oncontextmenu='return false' class='snippet-body'>
+                                <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+   <div class="hero-container"><h1 class="image" data-aos="zoom-in">TECH SYNERGY </h1>
+                                <div class="first hero" data-aos="fade-up">
+        <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+            <img src="https://shorturl.at/bVc6r" alt="">
+        </div>
+        <div class="hero-description">
+            <p>Compile Clash</p>
+        </div>
+        <div class="hero-date">
+            <p>caption...</p>
+        </div>
+        <div class="hero-btn">
+            <a href="compile.html">Learn More</a>
+        </div>
+    </div>
+    
+    <div class="second hero"data-aos="fade-up">
+        <img class="hero-profile-img" src="" alt="">
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+            <img src="https://shorturl.at/bVc6r" alt="">
+        </div>
+        <div class="hero-description">
+            <p>Tech Trove Hunt</p>
+        </div>
+        <div class="hero-date">
+            <p>caption...</p>
+        </div>
+        <div class="hero-btn">
+            <a href="techtrove.html">Learn More</a>
+        </div>
+    </div>
+    <div class="first hero"data-aos="fade-up">
+        <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+            <img src="https://shorturl.at/bVc6r" alt="">
+        </div>
+        <div class="hero-description">
+            <p>Technical Slide View</p>
+        </div>
+        <div class="hero-date">
+            <p>caption..</p>
+        </div>
+        <div class="hero-btn">
+            <a href="slideview.html">Learn More</a>
+        </div>
+    </div>
+    
+    <div class="second hero"data-aos="fade-up">
+        <img class="hero-profile-img" src="" alt="">
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+            <img src="https://shorturl.at/bVc6r" alt="">
+        </div>
+        <div class="hero-description">
+            <p>Web Canvas</p>
+        </div>
+        <div class="hero-date">
+            <p>caption..</p>
+        </div>
+        <div class="hero-btn">
+            <a href="webcanvas.html">Learn More</a>
+        </div>
+    </div>
+    <div class="first hero"data-aos="fade-up">
+        <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+            <img src="https://shorturl.at/bVc6r" alt="">
+        </div>
+        <div class="hero-description">
+            <p>Mind Sprint</p>
+        </div>
+        <div class="hero-date">
+            <p>caption..</p>
+        </div>
+        <div class="hero-btn">
+            <a href="mindsprint.html">Learn More</a>
+        </div>
+    </div>
+    
+    <div class="second hero"data-aos="fade-up">
+        <img class="hero-profile-img" src="" alt="">
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+            <img src="https://shorturl.at/bVc6r" alt="">
+        </div>
+        <div class="hero-description">
+            <p>Data Visionary Challenge</p>
+        </div>
+        <div class="hero-date">
+            <p>caption..</p>
+        </div>
+        <div class="hero-btn">
+            <a href="datavis.html">Learn More</a>
+        </div>
+    </div>
+    </div>
+        
+<script type='text/javascript'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+
+    AOS.init({
+        duration:800,
+        delay:400
+    });
+    
+    </script>
+
+</body>
+</html>
